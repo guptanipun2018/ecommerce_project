@@ -11,7 +11,7 @@ const Cart = () => {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/cart/${userEmail}`);
+        const res = await axios.get(`https://ecommerce-project-nqsq.onrender.com/api/cart/${userEmail}`);
         setCartFromDB(res.data.cart);
       } catch (err) {
         console.error("Error fetching cart", err);

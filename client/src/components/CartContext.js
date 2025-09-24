@@ -14,7 +14,7 @@ export const CartProvider = ({ children }) => {
   // Add to Cart with backend sync
   const addToCart = async (product, email) => {
     try {
-      const res = await axios.post("http://localhost:5000/api/cart/add", {
+      const res = await axios.post("https://ecommerce-project-nqsq.onrender.com/api/cart/add", {
         email,
         product,
       });
@@ -27,7 +27,7 @@ export const CartProvider = ({ children }) => {
   // Remove from Cart with backend sync
   const removeFromCart = async (productId, email) => {
     try {
-      const res = await axios.post("http://localhost:5000/api/cart/remove", {
+      const res = await axios.post("https://ecommerce-project-nqsq.onrender.com/api/cart/remove", {
         email,
         productId,
       });

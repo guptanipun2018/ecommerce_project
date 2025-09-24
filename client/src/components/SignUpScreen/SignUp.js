@@ -18,7 +18,7 @@ const SignUp = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/signup", { name, email, password });
+      const res = await axios.post("https://ecommerce-project-nqsq.onrender.com/api/signup", { name, email, password });
 
       console.log(res.data.user);
 
